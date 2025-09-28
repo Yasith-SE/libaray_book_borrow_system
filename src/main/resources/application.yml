@@ -1,5 +1,10 @@
 spring:
   datasource:
-    url: //add database link
-    username: // add username
-    password: // add password
+    url: jdbc:mysql://localhost:3307/book_borrow_system?createDatabaseIfNotExist = true
+    username: root
+    password: //add password
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+      show_sql: true
